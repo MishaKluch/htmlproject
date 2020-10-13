@@ -1,20 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Signika:wght@600&display=swap');
 
 :root{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     --main-color: black;
+    --accent-color: #519AC9;
     scroll-behavior: smooth;
-}
-
-header .container {
-    font-family: 'Commissioner', sans-serif;
-    font-size: 1.5rem; 
-    justify-content: left; 
-    
-}
-
-header .p{
-    justify-content: center !important;
 }
 
 header .menu a{
@@ -23,5 +13,28 @@ header .menu a{
     text-decoration: none;
     text-transform: uppercase;
 }
+header .logo-block{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
 
-.img
+header .logo-block img{
+    padding:10px;
+}
+/*first section*/
+
+.background h1{
+    color: var(--accent-color);
+    font-size: 12px;
+}
+
+.background p{
+    color:var(--main-color);
+    font-family:'Signika', sans-serif;
+    font-size:56px;
+}
+
+.background {
+    background-image: url(..img/background.svg);
+}
