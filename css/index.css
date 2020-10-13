@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+:root{
+    font-family: 'Roboto', sans-serif;
+    --main-color: black;
+    scroll-behavior: smooth;
+}
+
+header .container {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 1.5rem; 
+    justify-content: left; 
+    
+}
+
+header .p{
+    justify-content: center !important;
+}
+
+header .menu a{
+    color: #235565;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.img
