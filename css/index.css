@@ -1,16 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Signika:wght@600&display=swap');
-
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Signika:wght@600&display=swap'); 
+:root {
     font-family: 'Poppins', sans-serif;
-    --main-color: black;
-    --accent-color: #519AC9;
-    --menu-color: #235565;
-    scroll-behavior: smooth;
+    --main-color: black; --accent-color: #519AC9; --menu-color: #235565; scroll-behavior: smooth;
 }
 
-body{
+body {
     max-width: 980px;
-    margin:auto;
+    margin: auto;
 }
 
 header .menu {
@@ -18,24 +14,24 @@ header .menu {
     justify-content: space-around;
 }
 
-header .menu a{
+header .menu a {
     color: black;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 5px; 
+    padding: 5px;
     border: 1px solid transparent;
 }
 
-
-header .menu a:hover{
+header .menu a:hover {
     border: 1px solid var(--menu-color);
 }
 
-@media (min-width: 769px){
-    header .header-nav{
+@media (min-width: 769px) {
+    header .header-nav {
         display: flex;
     }
+
     header .menu {
         display: flex;
         /* justify-content: center; */
@@ -43,58 +39,62 @@ header .menu a:hover{
     }
 }
 
- header .logo-block{
+header .logo-block {
     display: flex;
     align-items: center;
     padding: 5px;
 }
 
-header .logo-block img{
-    padding:10px;
+header .logo-block img {
+    padding: 10px;
 }
-/*first section*/
 
-.background{
+/*first section*/
+.background {
     display: flex;
     max-width: 350px;
     flex-direction: column;
-    margin:5px;
-    
+    margin: 5px;
 }
-.background h1{
+
+.background h1 {
     color: var(--accent-color);
     font-size: 18px;
 }
 
-.background h2{
-    color:var(--main-color);
-    font-family:'Signika', sans-serif;
-    font-size:48px;
+.background h2 {
+    color: var(--main-color);
+    font-family: 'Signika', sans-serif;
+    font-size: 48px;
 }
 
-
-.container{
-    background-position: left;
+.container {
+    background-position: center;
     background-image: url(../img/background.jpg);
     background-size: cover;
     min-width: 450;
-} 
+}
+
+@media(min-width: 769px) {
+    .container {
+        background-image:flex;
+    }
+}
 
 /*Controls*/
-
-.button{
+.button {
     width: 50%;
     padding: 1em 1.2em;
-    border:0.1em solid white;
+    border: 0.1em solid white;
     margin: 0.7em 0.3em 0.3em 0.3em;
-    border-radius:0.12em;
+    border-radius: 0.12em;
     color: white;
     text-align: center;
     transition: all 0.7s;
     background-color: var(--menu-color);
 }
 
-.services {
+/* .services {
     display: flex;
     max-width: 350px;
     flex-direction: column;
@@ -104,4 +104,4 @@ header .logo-block img{
 
 .services h2{
     font-family: 'Signika', sans-serif ;
-}
+} */
