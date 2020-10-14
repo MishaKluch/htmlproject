@@ -50,36 +50,77 @@ header .logo-block img {
 }
 
 /*first section*/
-.background {
+.mobile-firstsection {
     display: flex;
     max-width: 350px;
     flex-direction: column;
     margin: 5px;
 }
 
-.background h1 {
+.mobile-firstsection h1 {
     color: var(--accent-color);
     font-size: 18px;
 }
 
-.background h2 {
+.mobile-firstsection h2 {
     color: var(--main-color);
     font-family: 'Signika', sans-serif;
     font-size: 48px;
 }
 
-.container {
-    background-position: center;
+
+
+.mobile-header {
+    background-position: left;
     background-image: url(../img/background.jpg);
     background-size: cover;
     min-width: 450;
 }
 
-@media(min-width: 769px) {
-    .container {
-        background-image:flex;
-    }
+.desktop-firstsection {
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    margin: 5px;
 }
+
+.desktop-firstsection h1 {
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.desktop-firstsection h2 {
+    color: var(--main-color);
+    font-family: 'Signika', sans-serif;
+    font-size: 48px;
+}
+
+.desktop-header{
+    display: flex;
+    align-items: left;
+    padding: 5px;
+}
+.desktop-header img{
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .mobile-header {
+     display: none;
+  } 
+  .desktop-header {
+      display: block;
+   }
+}
+@media (max-width: 768px) {
+  .mobile-header {
+     display: block;
+  } 
+  .desktop-header {
+      display: none;
+   }
+}
+
 
 /*Controls*/
 .button {
