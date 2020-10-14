@@ -1,19 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Signika:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Signika:wght@600&display=swap');
 
 :root{
     font-family: 'Poppins', sans-serif;
     --main-color: black;
     --accent-color: #519AC9;
+    --menu-color: #235565;
     scroll-behavior: smooth;
 }
 
+body{
+    max-width: 980px;
+    margin:auto;
+}
+
+header .menu {
+    flex: 1;
+    justify-content: space-around;
+}
+
 header .menu a{
-    color: #235565;
+    color: black;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 5px; 
+    border: 1px solid transparent;
 }
-header .logo-block{
+
+
+header .menu a:hover{
+    border: 1px solid var(--menu-color);
+}
+
+@media (min-width: 769px){
+    header .header-nav{
+        display: flex;
+    }
+    header .menu {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+}
+
+ header .logo-block{
     display: flex;
     align-items: center;
     padding: 5px;
@@ -24,17 +54,44 @@ header .logo-block img{
 }
 /*first section*/
 
+.background{
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    margin:5px;
+    
+}
 .background h1{
     color: var(--accent-color);
-    font-size: 12px;
+    font-size: 18px;
 }
 
-.background p{
+.background h2{
     color:var(--main-color);
     font-family:'Signika', sans-serif;
-    font-size:56px;
+    font-size:48px;
 }
 
-.background {
-    background-image: url(..img/background.svg);
+.background label{
+    color:
+}
+
+.container{
+    background-position: left;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    min-width: 450;
+} 
+
+/*Controls*/
+
+.button{
+    padding: 1em 1.2em;
+    border:0.1em solid white;
+    margin: 0.7em 0.3em 0.3em 0.3em;
+    border-radius:0.12em;
+    color: white;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: var(--menu-color);
 }
