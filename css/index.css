@@ -72,9 +72,6 @@ header .logo-block img{
     font-size:48px;
 }
 
-.background label{
-    color:
-}
 
 .container{
     background-position: left;
@@ -86,6 +83,7 @@ header .logo-block img{
 /*Controls*/
 
 .button{
+    width: 50%;
     padding: 1em 1.2em;
     border:0.1em solid white;
     margin: 0.7em 0.3em 0.3em 0.3em;
@@ -94,4 +92,16 @@ header .logo-block img{
     text-align: center;
     transition: all 0.7s;
     background-color: var(--menu-color);
+}
+
+.services {
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    margin:5px;
+    align-items: center;
+}
+
+.services h2{
+    font-family: 'Signika', sans-serif ;
 }
