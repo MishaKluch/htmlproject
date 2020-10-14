@@ -95,12 +95,12 @@ header .logo-block img {
     font-size: 48px;
 }
 
-.desktop-header{
+.desktop-header {
     display: flex;
-    align-items: left;
+    align-content: center;
     padding: 5px;
 }
-.desktop-header img{
+.desktop img {
     padding: 10px;
 }
 
