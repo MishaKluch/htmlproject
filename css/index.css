@@ -34,7 +34,6 @@ header .menu a:hover {
 
     header .menu {
         display: flex;
-        /* justify-content: center; */
         align-items: center;
     }
 }
@@ -100,7 +99,7 @@ header .logo-block img {
     align-content: center;
     padding: 5px;
 }
-.desktop img {
+.desktop-header img {
     padding: 10px;
 }
 
