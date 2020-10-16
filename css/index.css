@@ -73,7 +73,7 @@ header .logo-block img {
     background-position: left;
     background-image: url(../img/background.jpg);
     background-size: cover;
-    min-width: 450;
+    min-width: 450px;
 }
 
 .desktop-firstsection {
@@ -94,15 +94,20 @@ header .logo-block img {
     font-size: 48px;
 }
 
-.desktop-header {
+/* .desktop-header {
     display: flex;
     align-content: center;
     padding: 5px;
 }
 .desktop-header img {
     padding: 10px;
+} */
+@media (min-width: 768px){
+    .desktop-header{
+        display: flex;
+        flex-direction: row;
+    }
 }
-
 @media (min-width: 768px) {
   .mobile-header {
      display: none;
